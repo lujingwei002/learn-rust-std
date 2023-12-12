@@ -1,0 +1,6 @@
+[book]
+authors = ["lujingwei"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Learn From Rust Std"
