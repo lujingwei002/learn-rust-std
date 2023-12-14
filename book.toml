@@ -12,5 +12,12 @@ command = "mdbook-mermaid"
 
 [output]
 
+[output.html.playground]
+editable = true
+copy-js = true
+
 [output.html]
-additional-js = ["mermaid.min.js", "mermaid-init.js"]
+additional-css = ["theme/style.css"]
+additional-js = ["assets/custom.js", "assets/bigPicture.js", "mermaid.min.js", "mermaid-init.js"]
+git-repository-url = "https://github.com/lujingwei002/learn-rust-std"
+edit-url-template = "https://github.com/lujingwei002/learn-rust-std/edit/main/{path}"
