@@ -1,29 +1,49 @@
+@media only screen and (max-width:1080px) {
+    .sidetoc {
+        display: none !important;
+    }
+}
 
 @media only screen and (min-width:1080px) {
     main {
+        position: relative;
+        padding-right: 170px;
     }
     .sidetoc {
+        margin-left: auto;
+        margin-right: auto;
+        /*left: calc(100% + (var(--content-max-width))/4 - 180px);*/
+        left: calc(100% - 200px);
+        position: absolute;
     }
     .pagetoc {
+        position: fixed;
+        width: 200px;
+        height: calc(100vh - var(--menu-bar-height) - 10rem);
+        overflow: auto;
+        z-index: 1000;
     }
     .pagetoc a {
+        border-left: 1px solid var(--sidebar-bg);
+        color: var(--fg) !important;
         display: block;
         padding-bottom: 5px;
         padding-top: 5px;
         padding-left: 10px;
         text-align: left;
+        text-decoration: none;
         font-size: 1.2rem;
     }
     .pagetoc a:hover,
     .pagetoc a.active {
+        background: var(--sidebar-bg);
         color: var(--sidebar-fg) !important;
     }
     .pagetoc .active {
+        background: var(--sidebar-bg);
         color: var(--sidebar-fg);
     }
 }
-
-
 
 .page-footer {
     margin-top: 50px;
@@ -36,19 +56,19 @@
 /* 修改章节目录的间距 */
 .chapter li.chapter-item {
     /* 没有文件时的文字颜色 */
-    color: #939da3;
-    /* margin-top: 1.5rem; */
+    /* color: #939da3;
+    margin-top: 1.5rem; */
 }
 
 /* 修改滚动条宽度 */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 5px;
     height: 5px;
 }
 ::-webkit-scrollbar-thumb {
     background: #99ccff;
     border-radius: 3px;
-} */
+}
 
 /* 表格靠左对齐 */
 table {
@@ -88,7 +108,7 @@ table {
     font-weight: 550;
 }
 .fa-github:after{
-    content: "镜子 🌟";
+    content: "繁星点点尽在你的指尖 🌟";
     margin-left: 4px;
 }
 
@@ -99,14 +119,15 @@ code {
 
 /* 修复可编辑代码框顶部过窄的问题 */
 code.editable, .ace_scroller {
-    top: 10px;
+    /* top: 10px; */
 }
 
 /* 修改书侧边目录的区域分隔行样式 */
+
 .chapter .spacer {
-    /* background-color: #99CCFF; */
-    /* height: 2px; */
-    /* margin-top: 8px; */
+    /* background-color: #99CCFF;
+    height: 2px;
+    margin-top: 8px; */
 }
 
 .chapter li .md-viewed {

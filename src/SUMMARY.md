@@ -5,12 +5,13 @@
 
 # 内存篇
 ---
-- [allocator](./allocator/intro.md)
-    - [怎么申请和释放内存](./allocator/malloc.md)
-    - [rawvec](./allocator/rawvec.md)
-    - [box](./allocator/box.md)
 - [layout](./chapter_1.md)
 - [指针](./chapter_1.md)
+- [申请内存](./allocator/intro.md)
+    - [global_alloc](./allocator/global_alloc.md)
+    - [allocator](./allocator/allocator.md)
+    - [rawvec](./allocator/rawvec.md)
+    - [box](./allocator/box.md)
 - [mem](./chapter_1.md)
 
 # 进阶
