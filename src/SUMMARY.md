@@ -5,7 +5,9 @@
 
 # 内存篇
 ---
-- [layout](./chapter_1.md)
+- [内存布局](./chapter_1.md)
+    - [对齐](./layout/alignment.md)
+    - [布局](./layout/layout.md)
 - [指针](./chapter_1.md)
 - [申请内存](./allocator/intro.md)
     - [global_alloc](./allocator/global_alloc.md)
