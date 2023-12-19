@@ -16,5 +16,11 @@
     - [box](./allocator/box.md)
 - [mem](./chapter_1.md)
 
-# 进阶
+# 类型篇
 ---
+- [类型](./type/intro.md)
+  - [size](./type/size.md)
+  - [unsize](./type/unsize.md)
+- [类型转换](./conversion/intro.md)
+  - [unsize](./conversion/coercion.md)
+
