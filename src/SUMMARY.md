@@ -8,6 +8,7 @@
 - [内存布局](./chapter_1.md)
     - [对齐](./layout/alignment.md)
     - [布局](./layout/layout.md)
+    - [repr](./layout/repr.md)
 - [指针](./chapter_1.md)
 - [申请内存](./allocator/intro.md)
     - [global_alloc](./allocator/global_alloc.md)
@@ -24,3 +25,10 @@
 - [类型转换](./conversion/intro.md)
   - [unsize](./conversion/coercion.md)
 
+# 基础
+---
+- [trait](./trait/intro.md)
+  - [cmp](./trait/cmp.md)
+- [slice](./slice/intro.md)
+  - [slice](./slice/slice.md)
+  - [cmp](./slice/cmp.md)

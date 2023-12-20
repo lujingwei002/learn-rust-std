@@ -10,6 +10,7 @@ title = "Learn From Rust Std"
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
 
+
 [output]
 
 [output.html.playground]
