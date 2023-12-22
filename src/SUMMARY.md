@@ -29,6 +29,25 @@
 ---
 - [trait](./trait/intro.md)
   - [cmp](./trait/cmp.md)
+  - [borrow](./trait/borrow.md)
 - [slice](./slice/intro.md)
   - [slice](./slice/slice.md)
   - [cmp](./slice/cmp.md)
+
+- [unit](./unit/intro.md)
+- [tuple](./tuple/intro.md)
+- [result](./result/intro.md)
+
+# future
+---
+- [future](./future/intro.md)
+  - [futures-task](./future/futures-task.md)
+  - [futures-executor](./future/futures-executor.md)
+
+# 实例
+
+---
+- [error](./examples/error/intro.md)
+  - [kind](./examples/error/kind.md)	
+- [iter](./examples/iter/intro.md)
+  - [iter::try_process](./examples/iter/try_process.md)
