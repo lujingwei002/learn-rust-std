@@ -25,11 +25,21 @@
 - [类型转换](./conversion/intro.md)
   - [unsize](./conversion/coercion.md)
 
+
+
+- [字符串](./string/intro.md)
+  - [ascii](./string/ascii.md)
+
 # 基础
+
 ---
 - [trait](./trait/intro.md)
   - [cmp](./trait/cmp.md)
   - [borrow](./trait/borrow.md)
+  - [unsize](./trait/unsize.md)
+  - [deref](./trait/deref.md)
+  - [index](./trait/index.md)
+  - [range](./trait/range.md)
 - [slice](./slice/intro.md)
   - [slice](./slice/slice.md)
   - [cmp](./slice/cmp.md)
@@ -41,6 +51,8 @@
 # future
 ---
 - [future](./future/intro.md)
+  - [future](./future/future.md)
+  - [waker](./future/waker.md)
   - [futures-task](./future/futures-task.md)
   - [futures-executor](./future/futures-executor.md)
 
