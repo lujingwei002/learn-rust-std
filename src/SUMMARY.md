@@ -16,6 +16,9 @@
     - [rawvec](./allocator/rawvec.md)
     - [box](./allocator/box.md)
 - [mem](./chapter_1.md)
+- [智能指针](./ptr/smart_ptr.md)
+  - [Rc](./ptr/rc.md)
+  - [Arc](./ptr/arc.md)
 
 # 类型篇
 ---
@@ -28,9 +31,12 @@
 
 
 - [字符串](./string/intro.md)
+  - [编码](./string/code.md)
   - [ascii](./string/ascii.md)
+  - [char](./string/char.md)
+  - [str](./string/str.md)
 
-# 基础
+# 特征篇
 
 ---
 - [trait](./trait/intro.md)
@@ -48,7 +54,21 @@
 - [tuple](./tuple/intro.md)
 - [result](./result/intro.md)
 
+# 错误处理
+- [error](./error/intro.md)
+  - [option](./option/option.md)
+  - [result](./result/result.md)
+  - [error](./error/error.md)
+  - [panic](./panic/panic.md)
+  - [unwind](./panic/unwind.md)
+
+# 标准库
+- [std](./std/std.md)
+  - [env](./std/env.md)
+  - [path](./std/path.md)
+
 # future
+
 ---
 - [future](./future/intro.md)
   - [future](./future/future.md)
