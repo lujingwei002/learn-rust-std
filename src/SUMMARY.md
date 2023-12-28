@@ -24,7 +24,8 @@
   - [unsize](./type/unsize.md)
 - [类型转换](./conversion/intro.md)
   - [unsize](./conversion/coercion.md)
-
+- [convert](./convert/intro.md)
+  - [实现](./convert/impl.md)
 # 基础
 ---
 - [trait](./trait/intro.md)
