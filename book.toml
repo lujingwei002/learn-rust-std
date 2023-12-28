@@ -5,6 +5,9 @@ multilingual = false
 src = "src"
 title = "Learn From Rust Std"
 
+[rust]
+edition = "2021"
+
 [preprocessor]
 
 [preprocessor.mermaid]

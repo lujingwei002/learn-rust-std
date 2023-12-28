@@ -16,6 +16,9 @@
     - [rawvec](./allocator/rawvec.md)
     - [box](./allocator/box.md)
 - [mem](./chapter_1.md)
+- [智能指针](./ptr/smart_ptr.md)
+  - [Rc](./ptr/rc.md)
+  - [Arc](./ptr/arc.md)
 
 # 类型篇
 ---
@@ -26,11 +29,23 @@
   - [unsize](./conversion/coercion.md)
 - [convert](./convert/intro.md)
   - [实现](./convert/impl.md)
-# 基础
+- [字符串](./string/intro.md)
+  - [编码](./string/code.md)
+  - [ascii](./string/ascii.md)
+  - [char](./string/char.md)
+  - [str](./string/str.md)
+
+# 特征篇
+
+
 ---
 - [trait](./trait/intro.md)
   - [cmp](./trait/cmp.md)
   - [borrow](./trait/borrow.md)
+  - [unsize](./trait/unsize.md)
+  - [deref](./trait/deref.md)
+  - [index](./trait/index.md)
+  - [range](./trait/range.md)
 - [slice](./slice/intro.md)
   - [slice](./slice/slice.md)
   - [cmp](./slice/cmp.md)
@@ -39,9 +54,25 @@
 - [tuple](./tuple/intro.md)
 - [result](./result/intro.md)
 
+# 错误处理
+- [error](./error/intro.md)
+  - [option](./option/option.md)
+  - [result](./result/result.md)
+  - [error](./error/error.md)
+  - [panic](./panic/panic.md)
+  - [unwind](./panic/unwind.md)
+
+# 标准库
+- [std](./std/std.md)
+  - [env](./std/env.md)
+  - [path](./std/path.md)
+
 # future
+
 ---
 - [future](./future/intro.md)
+  - [future](./future/future.md)
+  - [waker](./future/waker.md)
   - [futures-task](./future/futures-task.md)
   - [futures-executor](./future/futures-executor.md)
 
