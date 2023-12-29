@@ -20,22 +20,6 @@
   - [Rc](./ptr/rc.md)
   - [Arc](./ptr/arc.md)
 
-# 类型篇
----
-- [类型](./type/intro.md)
-  - [size](./type/size.md)
-  - [unsize](./type/unsize.md)
-- [类型转换](./conversion/intro.md)
-  - [unsize](./conversion/coercion.md)
-
-
-
-- [字符串](./string/intro.md)
-  - [编码](./string/code.md)
-  - [ascii](./string/ascii.md)
-  - [char](./string/char.md)
-  - [str](./string/str.md)
-
 # 特征篇
 
 ---
@@ -46,17 +30,31 @@
   - [deref](./trait/deref.md)
   - [index](./trait/index.md)
   - [range](./trait/range.md)
-- [slice](./slice/intro.md)
+
+
+
+
+# 类型篇
+---
+- [类型](./type/intro.md)
+  - [size](./type/size.md)
+  - [unsize](./type/unsize.md)
+- [类型转换](./conversion/intro.md)
+  - [unsize](./conversion/coercion.md)
+- [字符串](./string/intro.md)
+  - [编码](./string/code.md)
+  - [ascii](./string/ascii.md)
+  - [char](./string/char.md)
+  - [str](./string/str.md)
+- [切片](./slice/intro.md)
   - [slice](./slice/slice.md)
   - [cmp](./slice/cmp.md)
-
 - [unit](./unit/intro.md)
-- [tuple](./tuple/intro.md)
-- [result](./result/intro.md)
+- [元组](./tuple/intro.md)
 
 # 错误处理
+- [result](./result/result.md)
 - [error](./error/intro.md)
-  - [option](./option/option.md)
   - [result](./result/result.md)
   - [error](./error/error.md)
   - [panic](./panic/panic.md)
@@ -66,6 +64,7 @@
 - [std](./std/std.md)
   - [env](./std/env.md)
   - [path](./std/path.md)
+  - [process](./std/process.md)
 
 # future
 

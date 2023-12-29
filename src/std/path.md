@@ -17,12 +17,12 @@
 
 ## Prefix
 
-| 类型          | 例子         |
-| ------------ | ------------ |
-| Verbatim     | `\\?\cat_pics` |
-| VerbatimUNC  | `\\?\UNC\server\share` |
-| VerbatimDisk | `\\?\C:` |
-| DeviceNS     | `\\.\COM42` |
-| UNC          | `\\server\share` |
-| Disk         | `C:` |
+| 类型          | 例子         | prefix_len |
+| ------------ | ------------ | ------------ |
+| Verbatim     | `\\?\x` | 4 + os_str_len(cat_pics) |
+| VerbatimUNC  | `\\?\UNC\x\y` | 8 + os_str_len(x) + if os_str_len(y) > 0 { 1 + os_str_len(y) } else { 0 } |
+| VerbatimDisk | `\\?\C:` | 6 |
+| DeviceNS     | `\\.\x` | 4 + os_str_len(x) |
+| UNC          | `\\x\y` | 2 + os_str_len(x) + if os_str_len(y) > 0 { 1 + os_str_len(y) } else { 0 } |
+| Disk         | `C:` | 2 |
 
