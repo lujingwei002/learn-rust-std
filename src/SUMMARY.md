@@ -34,6 +34,7 @@
   - [ascii](./string/ascii.md)
   - [char](./string/char.md)
   - [str](./string/str.md)
+  - [CStr](./string/CStr.md)
 
 # 特征篇
 
@@ -57,11 +58,6 @@
   - [unsize](./type/unsize.md)
 - [类型转换](./conversion/intro.md)
   - [unsize](./conversion/coercion.md)
-- [字符串](./string/intro.md)
-  - [编码](./string/code.md)
-  - [ascii](./string/ascii.md)
-  - [char](./string/char.md)
-  - [str](./string/str.md)
 - [切片](./slice/intro.md)
   - [slice](./slice/slice.md)
   - [cmp](./slice/cmp.md)
@@ -81,6 +77,18 @@
   - [env](./std/env.md)
   - [path](./std/path.md)
   - [process](./std/process.md)
+  - [rt](./std/rt.md)
+  
+# io
+- [io](./io/intro.md)
+  - [特征](./io/trait.md)
+  - [错误处理](./io/error.md)
+
+
+# 多线程
+- [线程](./thread/thread.md)
+  - [local key](./thread/local_key.md)
+
 
 # future
 
