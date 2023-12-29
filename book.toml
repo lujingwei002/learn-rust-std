@@ -25,3 +25,6 @@ additional-css = ["theme/style.css"]
 additional-js = ["assets/custom.js", "assets/bigPicture.js", "mermaid.min.js", "mermaid-init.js"]
 git-repository-url = "https://github.com/lujingwei002/learn-rust-std"
 edit-url-template = "https://github.com/lujingwei002/learn-rust-std/edit/main/{path}"
+
+[output.html.fold]
+enable = true
