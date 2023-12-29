@@ -20,7 +20,23 @@
   - [Rc](./ptr/rc.md)
   - [Arc](./ptr/arc.md)
 
+# 类型篇
+---
+- [类型](./type/intro.md)
+  - [size](./type/size.md)
+  - [unsize](./type/unsize.md)
+- [类型转换](./conversion/intro.md)
+  - [unsize](./conversion/coercion.md)
+- [convert](./convert/intro.md)
+  - [实现](./convert/impl.md)
+- [字符串](./string/intro.md)
+  - [编码](./string/code.md)
+  - [ascii](./string/ascii.md)
+  - [char](./string/char.md)
+  - [str](./string/str.md)
+
 # 特征篇
+
 
 ---
 - [trait](./trait/intro.md)
