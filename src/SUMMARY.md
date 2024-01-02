@@ -48,9 +48,6 @@
   - [index](./trait/index.md)
   - [range](./trait/range.md)
 
-
-
-
 # 类型篇
 ---
 - [类型](./type/intro.md)
@@ -67,28 +64,37 @@
 # 错误处理
 - [result](./result/result.md)
 - [error](./error/intro.md)
-  - [result](./result/result.md)
   - [error](./error/error.md)
-  - [panic](./panic/panic.md)
+- [panic](./panic/panic.md)
+  - [backtrace](./backtrace/backtrace.md)
   - [unwind](./panic/unwind.md)
 
 # 标准库
 - [std](./std/std.md)
   - [env](./std/env.md)
-  - [path](./std/path.md)
-  - [process](./std/process.md)
   - [rt](./std/rt.md)
   
 # io
+- [文件系统](./std/file.md)
+	- [path](./std/path.md)
+	- [文件操作](./std/fs.md)
 - [io](./io/intro.md)
   - [特征](./io/trait.md)
   - [错误处理](./io/error.md)
 
 
 # 多线程
+- [进程](./std/process.md)
 - [线程](./thread/thread.md)
   - [local key](./thread/local_key.md)
-
+- [sync](./sync/sync.md)
+  - [poison](./sync/poison.md)
+  - [futex](./sync/futex.md)
+  - [mutex](./sync/mutex.md)	
+  - [remutex](./sync/remutex.md)	
+  - [rwlock](./sync/rwlock.md)	
+  - [condvar](./sync/condvar.md)	
+  - [barrier](./sync/barrier.md)
 
 # future
 
