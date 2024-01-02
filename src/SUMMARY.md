@@ -23,18 +23,26 @@
 # 类型篇
 ---
 - [类型](./type/intro.md)
+- [切片](./slice/intro.md)
+  - [slice](./slice/slice.md)
+  - [cmp](./slice/cmp.md)
+- [unit](./unit/intro.md)
+- [元组](./tuple/intro.md)
+- [类型转换](./conversion/intro.md)
+- [convert](./convert/intro.md)
+  - [unsize](./conversion/coercion.md)
+  - [实现](./convert/impl.md)
   - [size](./type/size.md)
   - [unsize](./type/unsize.md)
-- [类型转换](./conversion/intro.md)
-  - [unsize](./conversion/coercion.md)
-- [convert](./convert/intro.md)
-  - [实现](./convert/impl.md)
+  - [From](./conversion/from.md)
+  - [FromIterator](./conversion/from_iterator.md)
 - [字符串](./string/intro.md)
   - [编码](./string/code.md)
   - [ascii](./string/ascii.md)
   - [char](./string/char.md)
   - [str](./string/str.md)
   - [CStr](./string/CStr.md)
+  - [String](./string/String.md)
 
 # 特征篇
 
@@ -48,18 +56,7 @@
   - [index](./trait/index.md)
   - [range](./trait/range.md)
 
-# 类型篇
----
-- [类型](./type/intro.md)
-  - [size](./type/size.md)
-  - [unsize](./type/unsize.md)
-- [类型转换](./conversion/intro.md)
-  - [unsize](./conversion/coercion.md)
-- [切片](./slice/intro.md)
-  - [slice](./slice/slice.md)
-  - [cmp](./slice/cmp.md)
-- [unit](./unit/intro.md)
-- [元组](./tuple/intro.md)
+
 
 # 错误处理
 - [result](./result/result.md)
