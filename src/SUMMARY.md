@@ -18,17 +18,41 @@
 - [mem](./chapter_1.md)
 - [智能指针](./ptr/smart_ptr.md)
   - [Rc](./ptr/rc.md)
-  - [Arc](./ptr/arc.md)
+  - [UniqueRc](./ptr/unique_rc.md)
+  - [Arc](./sync/arc.md)
 
 # 类型篇
 ---
-- [类型](./type/intro.md)
+- [构造函数](./type/constructor.md)
+- [值类型](./type/value.md)
+  - [UnsafeCell](./type/value/UnsafeCell.md)
+  - [SyncUnsafeCell](./type/value/SyncUnsafeCell.md)
+  - [Cell](./type/value/cell.md)
+- [指针类型](./type/ptr.md)
+  - [Ref](./type/ptr/Ref.md)
+  - [RefMut](./type/ptr/RefMut.md)
+- [unit](./unit/intro.md)
 - [切片](./slice/intro.md)
   - [slice](./slice/slice.md)
   - [cmp](./slice/cmp.md)
-- [unit](./unit/intro.md)
+  - [Vec](./vec/vec.md)
 - [元组](./tuple/intro.md)
+- [字符串](./string/intro.md)
+  - [编码](./string/code.md)
+  - [ascii](./string/ascii.md)
+  - [char](./string/char.md)
+  - [str](./string/str.md)
+  - [CStr](./string/CStr.md)
+  - [CString](./string/CString.md)
+  - [String](./string/String.md)
+  
+# 变型篇
+
+---
 - [类型转换](./conversion/intro.md)
+- [借用](./conversion/trait/trait.md)
+  - [borrow](./conversion/trait/borrow.md)
+  - [ToOwned](./conversion/trait/to_owned.md)
 - [convert](./convert/intro.md)
   - [unsize](./conversion/coercion.md)
   - [实现](./convert/impl.md)
@@ -36,13 +60,8 @@
   - [unsize](./type/unsize.md)
   - [From](./conversion/from.md)
   - [FromIterator](./conversion/from_iterator.md)
-- [字符串](./string/intro.md)
-  - [编码](./string/code.md)
-  - [ascii](./string/ascii.md)
-  - [char](./string/char.md)
-  - [str](./string/str.md)
-  - [CStr](./string/CStr.md)
-  - [String](./string/String.md)
+
+
 
 # 特征篇
 

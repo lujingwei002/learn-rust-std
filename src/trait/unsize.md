@@ -19,17 +19,17 @@
 - `T: ?Size + Unsize<U>`
 - `U: ?Size`
 
-| -        | -        |
-| -------- | -------- |
-| &mut T   | &mut U   |
-| &mut T   | &U       |
-| &mut T   | *mut U   |
-| &mut T   | *const U |
-| &T       | &U       |
-| &T       | *const U |
-| *mut T   | *mut U   |
-| *mut T   | *const U |
-| *const T | *const U |
+| -        | -        |      |
+| -------- | -------- | ---- |
+| &mut T   | &mut U   |      |
+| &mut T   | &U       |      |
+| &mut T   | *mut U   |      |
+| &mut T   | *const U |      |
+| &T       | &U       |      |
+| &T       | *const U |      |
+| *mut T   | *mut U   |      |
+| *mut T   | *const U |      |
+| *const T | *const U |      |
 
 ### 转换smart pointer
 
