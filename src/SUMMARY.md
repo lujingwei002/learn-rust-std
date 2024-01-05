@@ -45,7 +45,11 @@
   - [CStr](./string/CStr.md)
   - [CString](./string/CString.md)
   - [String](./string/String.md)
-  
+- [迭代器](./iter/iter.md)
+  - [迭代器](./iter/iterator.md)
+  - [适配器](./iter/adapter.md)
+  - [聚合操作](./iter/aggregate.md)
+  - [特征](./iter/trait.md)
 # 变型篇
 
 ---
