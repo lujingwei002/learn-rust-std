@@ -94,3 +94,50 @@ unsafe impl<#[may_dangle] T: ?Sized, A: Allocator> Drop for Weak<T, A> {
 ```
 
 > 所有弱引用都释放后，回收内存。
+
+## PartialEq特征的优化
+
+上面已经知道两个Arc对象可能指向同一个ArcInner，因为判断两个指针是否相等就可以判断两个Arc对象是否相等了，但有一个条件，T需要实现Eq特征，因为PartialEq有可能是非自反的，即可以不等于自身。
+
+看一下源码中的实现
+
+```rust
+trait ArcEqIdent<T: ?Sized + PartialEq, A: Allocator> {
+    fn eq(&self, other: &Arc<T, A>) -> bool;
+    fn ne(&self, other: &Arc<T, A>) -> bool;
+}
+
+impl<T: ?Sized + PartialEq, A: Allocator> ArcEqIdent<T, A> for Arc<T, A> {
+
+    default fn eq(&self, other: &Arc<T, A>) -> bool {
+        **self == **other
+    }
+
+    default fn ne(&self, other: &Arc<T, A>) -> bool {
+        **self != **other
+    }
+}
+
+impl<T: ?Sized + crate::rc::MarkerEq, A: Allocator> ArcEqIdent<T, A> for Arc<T, A> {
+
+    fn eq(&self, other: &Arc<T, A>) -> bool {
+        Arc::ptr_eq(self, other) || **self == **other
+    }
+
+    fn ne(&self, other: &Arc<T, A>) -> bool {
+        !Arc::ptr_eq(self, other) && **self != **other
+    }
+}
+
+impl<T: ?Sized + PartialEq, A: Allocator> PartialEq for Arc<T, A> {
+    
+    fn eq(&self, other: &Arc<T, A>) -> bool {
+        ArcEqIdent::eq(self, other)
+    }
+
+    fn ne(&self, other: &Arc<T, A>) -> bool {
+        ArcEqIdent::ne(self, other)
+    }
+}
+```
+

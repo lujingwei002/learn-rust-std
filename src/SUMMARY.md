@@ -32,11 +32,13 @@
   - [Ref](./type/ptr/Ref.md)
   - [RefMut](./type/ptr/RefMut.md)
 - [unit](./unit/intro.md)
+- [any](./any/any.md)
+- [元组](./tuple/intro.md)
 - [切片](./slice/intro.md)
+  - [array](./array/array.md)
   - [slice](./slice/slice.md)
   - [cmp](./slice/cmp.md)
   - [Vec](./vec/vec.md)
-- [元组](./tuple/intro.md)
 - [字符串](./string/intro.md)
   - [编码](./string/code.md)
   - [ascii](./string/ascii.md)
@@ -50,6 +52,7 @@
   - [适配器](./iter/adapter.md)
   - [聚合操作](./iter/aggregate.md)
   - [特征](./iter/trait.md)
+  
 # 变型篇
 
 ---
@@ -78,10 +81,11 @@
   - [deref](./trait/deref.md)
   - [index](./trait/index.md)
   - [range](./trait/range.md)
-
+  - [try](./trait/try.md)
 
 
 # 错误处理
+- [option](./option/option.md)
 - [result](./result/result.md)
 - [error](./error/intro.md)
   - [error](./error/error.md)

@@ -230,12 +230,18 @@ pub unsafe fn next_code_point<'a, I: Iterator<Item = &'a u8>>(bytes: &mut I) -> 
 
 
 
-## UTF8
+## 
 
-常用接口
+## 常用转换接口
 
-| -                         | -                                     |
-| ------------------------- | ------------------------------------- |
-| u8::is_utf8_char_boundary | 是否Utf8边界字符,即大于等于-0x40      |
-| char::encode_utf8_raw     | 编码成Utf8，将单个unicode转换为u8序列 |
+|      |        | -                         | -                                |
+| ---- | ------ | ------------------------- | -------------------------------- |
+|      |        | u8::is_utf8_char_boundary | 是否Utf8边界字符,即大于等于-0x40 |
+| char | [u8]   | char::encode_utf8_raw     | unicode转为utf8                  |
+| char | str    | char::encode_utf8         | unicode转为utf8                  |
+| char | [u16]  | char::encode_utf16        | unicode转为utf16                 |
+| char | [u16]  | char::encode_utf16_raw    | unicode转为utf16                 |
+| [u8] | str    | str::from_utf8            | [u8]转为utf8                     |
+| str  | [u16]  | str::encode_utf16         | utf8转为utf16                    |
+| str  | [char] | str::chars                | utf8转为unicode                  |
 
